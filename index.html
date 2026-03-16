@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JuridIA — Assistant Juridique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-mark">⚖</span>
+        <span class="logo-text">Jurid<em>IA</em></span>
+      </div>
+      <p class="header-tagline">Assistant Juridique Intelligent</p>
+    </div>
+    <div class="header-line"></div>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+
+    <!-- Bot Status Card -->
+    <section class="bot-card">
+
+      <!-- Avatar + animation zone -->
+      <div class="avatar-zone">
+        <div class="avatar-rings" id="avatarRings">
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+          <div class="ring ring-3"></div>
+        </div>
+        <div class="avatar-core" id="avatarCore">
+          <span class="avatar-icon">⚖</span>
+        </div>
+        <div class="waveform" id="waveform">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <!-- Status label -->
+      <div class="status-label" id="statusLabel">
+        <span class="status-dot" id="statusDot"></span>
+        <span id="statusText">En attente</span>
+      </div>
+
+      <!-- Controls -->
+      <div class="controls">
+
+        <!-- PDF Import -->
+        <div class="control-btn-wrap" id="pdfWrap">
+          <input type="file" id="pdfInput" accept=".pdf" hidden />
+          <button class="control-btn btn-pdf" id="pdfBtn" onclick="document.getElementById('pdfInput').click()">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="12" y1="12" x2="12" y2="18"/>
+              <line x1="9" y1="15" x2="15" y2="15"/>
+            </svg>
+            <span class="btn-label">Importer un PDF</span>
+          </button>
+          <span class="file-name" id="fileName"></span>
+        </div>
+
+        <!-- Mic -->
+        <div class="control-btn-wrap">
+          <button class="control-btn btn-mic" id="micBtn">
+            <svg class="btn-icon mic-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+              <line x1="12" y1="19" x2="12" y2="23"/>
+              <line x1="8" y1="23" x2="16" y2="23"/>
+            </svg>
+            <span class="btn-label" id="micLabel">Activer le micro</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="section-divider">
+      <span>Transcription de la conversation</span>
+    </div>
+
+    <!-- Conversation -->
+    <section class="conversation" id="conversation">
+
+      <div class="message bot-msg">
+        <div class="msg-avatar">⚖</div>
+        <div class="msg-bubble">
+          <p>Bonjour. Je suis <strong>JuridIA</strong>, votre assistant juridique. Vous pouvez m'importer un document PDF et me poser une question le consernant à voix haute. Je suis à votre disposition.</p>
+          <span class="msg-time">09:00</span>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>JuridIA — Usage strictement confidentiel · <a href="#">Mentions légales</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
