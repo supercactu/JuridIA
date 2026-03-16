@@ -7,7 +7,7 @@
 /* =========================================
    CONFIG — à adapter à votre instance n8n
 ========================================= */
-const N8N_WEBHOOK_URL = 'https://loulous.app.n8n.cloud/webhook-test/jurist-query;
+const N8N_WEBHOOK_URL = 'https://loulous.app.n8n.cloud/webhook/jurist-query;
 // Remplacez par votre URL n8n réelle, ex:
 // const N8N_WEBHOOK_URL = 'https://mon-n8n.example.com/webhook/jurist-query';
 
