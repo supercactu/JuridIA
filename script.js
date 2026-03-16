@@ -1,4 +1,4 @@
-const N8N_WEBHOOK_URL = 'https://loulous.app.n8n.cloud/webhook-test/jurist-query';
+const N8N_WEBHOOK_URL = 'https://loulous.app.n8n.cloud/webhook/jurist-query';
 /* =========================================
    RÉFÉRENCES DOM
 ========================================= */
